@@ -1,0 +1,17 @@
+# ninja log v5
+424	2097	7099172335336029	CMakeFiles/zadanie.dir/main.cpp.obj	64a9c863e0b37a49
+4	158	7099206072933699	zadanie_autogen/timestamp	433876b403d537fc
+4	158	7099206072933699	zadanie_autogen/mocs_compilation.cpp	433876b403d537fc
+4	158	7099206072933699	D:/qt proj/build-zadanie-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/zadanie_autogen/timestamp	433876b403d537fc
+1830	1972	7099206091014471	zadanie.exe	777751b6371e07a0
+4	158	7099206072933699	D:/qt proj/build-zadanie-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/zadanie_autogen/mocs_compilation.cpp	433876b403d537fc
+421	1950	7099172333795160	CMakeFiles/zadanie.dir/zadanie_autogen/mocs_compilation.cpp.obj	f391abe3ecba340
+163	1829	7099206089555957	CMakeFiles/zadanie.dir/mainwindow.cpp.obj	57356c454f631d4b
+11	409	7099262634925704	zadanie_autogen/timestamp	433876b403d537fc
+11	409	7099262634925704	zadanie_autogen/mocs_compilation.cpp	433876b403d537fc
+11	409	7099262634925704	D:/qt proj/build-zadanie-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/zadanie_autogen/timestamp	433876b403d537fc
+11	409	7099262634925704	D:/qt proj/build-zadanie-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/zadanie_autogen/mocs_compilation.cpp	433876b403d537fc
+409	1941	7099262651073830	CMakeFiles/zadanie.dir/zadanie_autogen/mocs_compilation.cpp.obj	f391abe3ecba340
+414	2027	7099262651882624	CMakeFiles/zadanie.dir/main.cpp.obj	64a9c863e0b37a49
+417	2211	7099262653740925	CMakeFiles/zadanie.dir/mainwindow.cpp.obj	57356c454f631d4b
+2211	2346	7099262655026267	zadanie.exe	777751b6371e07a0
