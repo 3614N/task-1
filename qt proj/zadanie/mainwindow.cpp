@@ -68,7 +68,7 @@ void MainWindow::on_calculation_clicked()
     dialog->setWindowTitle("Answer");
 
     QLabel *label = new QLabel("Решение первой задачи:\nX = " + xAnswer + "\nY = " + yAnswer + "\nZ = " + zAnswer
-                                   + "\nРешение второй задачи:\nX = " + x2Answer + "\nРешение третьей задачи:\nS = " + sAnswer, dialog);
+                                   + "\nРешение второй задачи:\nY = " + x2Answer + "\nРешение третьей задачи:\nS = " + sAnswer, dialog);
 
     QFont font = label->font();
     font.setPointSize(16);
