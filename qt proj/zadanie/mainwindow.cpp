@@ -14,34 +14,23 @@ Result first(double a, double b) {
     Result result;
     result.x = pow(log10(a), 3) + sin(pow(b, 2));
     result.y = pow(a, 3) / pow(b, result.x);
-    result.z = pow(abs(result.x), 1 / 6) + pow(abs(result.x) + abs(result.y), 1 / 3);
+    result.z = pow(abs(result.x), 1.0 / 6.0) + pow(abs(result.x) + abs(result.y), 1.0 / 3.0);
     return result;
 }
 
 double second(double x) {
-
-    double y = 0;
-
     if (x < -1)
-        y = -1 * x;
-
-    if ((-1 <= x) and (x < 1))
-        y = pow(x, 2);
-
-    if (x >= 1)
-        y = x;
-
-    return y;
+        return -1 * x;
+    else if (x < 1)
+        return pow(x, 2);
+    else
+        return x;
 }
 
 double third(double x, double m) {
-
     double s = 0;
-
     for (int i = 1; i <= 2 * m + 1; i += 2)
         s += i * pow(x, -2);
-
-
     return s;
 }
 
@@ -59,23 +48,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_calculation_clicked()
 {
-    QLineEdit *aLine = ui->a;
-    QLineEdit *bLine = ui->b;
-    QLineEdit *x1Line = ui->x_1;
-    QLineEdit *x2Line = ui->x_2;
-    QLineEdit *mLine = ui->m;
-
-    QString aString = aLine->text();
-    QString bString = bLine->text();
-    QString x1String = x1Line->text();
-    QString x2String = x2Line->text();
-    QString mString = mLine->text();
-
-    double a = aString.toDouble();
-    double b = bString.toDouble();
-    double x1 = x1String.toDouble();
-    double x2 = x2String.toDouble();
-    double m = mString.toDouble();
+    double a = ui->a->text().toDouble();
+    double b = ui->b->text().toDouble();
+    double x1 = ui->x_1->text().toDouble();
+    double x2 = ui->x_2->text().toDouble();
+    double m = ui->m->text().toDouble();
 
     Result result = first(a, b);
     double y = second(x1);
@@ -90,14 +67,12 @@ void MainWindow::on_calculation_clicked()
     QDialog *dialog = new QDialog(this);
     dialog->setWindowTitle("Answer");
 
-    QLabel *label = new QLabel("Решение первой задачи:\nX = "+xAnswer+"\nY = "+yAnswer+"\nZ = "+zAnswer
-                               +"\nРешение второй задачи:\nX = "+x2Answer+"\nРешение третьей задачи:\nS = "+sAnswer, dialog);
+    QLabel *label = new QLabel("Решение первой задачи:\nX = " + xAnswer + "\nY = " + yAnswer + "\nZ = " + zAnswer
+                                   + "\nРешение второй задачи:\nX = " + x2Answer + "\nРешение третьей задачи:\nS = " + sAnswer, dialog);
 
     QFont font = label->font();
     font.setPointSize(16);
     label->setFont(font);
     dialog->setFixedSize(400, 300);
     dialog->exec();
-
 }
-

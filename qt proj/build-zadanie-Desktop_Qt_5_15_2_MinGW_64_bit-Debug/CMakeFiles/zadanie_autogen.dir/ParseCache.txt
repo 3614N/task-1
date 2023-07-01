@@ -262,6 +262,6 @@ D:/qt proj/zadanie/mainwindow.h
  mdp:C:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include/wctype.h
-D:/qt proj/zadanie/main.cpp
 D:/qt proj/zadanie/mainwindow.cpp
  uic:./ui_mainwindow.h
+D:/qt proj/zadanie/main.cpp
